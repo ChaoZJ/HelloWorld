@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/hello")
     public CommonResult<String> hello(){
-        return new CommonResult<>(Code.SUCCESS, "hello world");
+        return new CommonResult<>(Code.SUCCESS, "hello, 冠希");
     }
 }
