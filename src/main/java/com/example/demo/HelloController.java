@@ -14,4 +14,9 @@ public class HelloController {
     public CommonResult<String> hello(){
         return new CommonResult<>(Code.SUCCESS, "hello, 冠希");
     }
+
+    @GetMapping("/hello/sayHello")
+    public CommonResult<String> sayHello(String name){
+        return new CommonResult<>(Code.SUCCESS, "hello, " + name);
+    }
 }
